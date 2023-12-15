@@ -1,2 +1,3 @@
 # boilerplate-mfe-react-vite
-projeto base para criar micro frontend
+
+projeto base para criar micro frontend.

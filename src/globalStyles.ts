@@ -20,6 +20,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: Open-Sans, Helvetica, Sans-Serif;
     font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 `;
 

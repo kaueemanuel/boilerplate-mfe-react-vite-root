@@ -8,13 +8,12 @@ const CountContainer = () => {
   const { t } = useTranslation()
   const { add, count } = useCountStore()
 
-  console.log('renderizou')
   return (
     <Container>
       <h1>
         {t('counter')}: {count}
       </h1>
-      <Button onClick={add}>
+      <Button onClick={add} data-testid="count-button">
         {t('count')}
       </Button>
     </Container>

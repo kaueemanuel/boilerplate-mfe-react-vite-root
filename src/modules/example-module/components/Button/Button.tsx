@@ -2,7 +2,7 @@ import React from "react"
 import { Button as StyledButton } from "./Button.styles"
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children?: React.ReactElement;
+  children?: React.ReactElement | string;
 }
 
 const Button = (props: Props) => {

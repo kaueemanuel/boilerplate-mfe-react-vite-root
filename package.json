@@ -3,13 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "18.16.0"
+  },
   "scripts": {
     "dev": "vite",
     "test": "jest --no-cache",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "check-node-version": "node check-node-version.js",
+    "preinstall": "npm run check-node-version"
   },
   "jest": {
     "testEnvironment": "jsdom",
@@ -26,6 +31,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
     "react-router-dom": "^6.21.0",
+    "semver": "^7.5.4",
     "zustand": "^4.4.7"
   },
   "devDependencies": {

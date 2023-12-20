@@ -6,14 +6,17 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remote-app",
+      name: "root-app",
       filename: "remoteEntry.js",
-      exposes: {
-        "./App": "./src/App.tsx",
+      remotes: {
+        "remote-mfe": "http://localhost:3001/assets/remote-mfe-entry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom", "zustand"],
     }),
   ],
+  optimizeDeps: {
+    include: ["@emotion/styled"],
+  },
   build: {
     modulePreload: false,
     target: "esnext",
@@ -21,9 +24,12 @@ export default defineConfig({
     cssCodeSplit: false,
   },
   server: {
-    port: 3001,
+    port: 3000,
   },
   preview: {
-    port: 3001,
+    port: 3000,
+  },
+  define: {
+    process: process,
   },
 });

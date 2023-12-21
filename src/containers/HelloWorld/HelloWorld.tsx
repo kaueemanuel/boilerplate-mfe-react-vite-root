@@ -1,5 +1,5 @@
 import { Container } from "./HelloWorld.styles"
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next"
 
 const HelloWorld = () => {
   const { t } = useTranslation()
@@ -7,7 +7,7 @@ const HelloWorld = () => {
   return (
     <Container>
       <h1>
-        {t('hello world')}
+        {t("hello world")}
       </h1>
     </Container>
   )

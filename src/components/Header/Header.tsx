@@ -1,4 +1,4 @@
-import { Container } from './Header.styles'
+import { Container } from "./Header.styles"
 
 interface Props extends React.HtmlHTMLAttributes<HTMLDivElement> {
   children?: React.ReactElement | string;

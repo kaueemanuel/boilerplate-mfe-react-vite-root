@@ -24,8 +24,8 @@ const App = () => {
           path="/remote/*"
           element={
             <>
-              <Header />
               <Suspense>
+                <Header />
                 <RemoteApp />
               </Suspense>
             </>

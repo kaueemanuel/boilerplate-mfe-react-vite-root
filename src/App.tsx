@@ -3,8 +3,6 @@ import ExampleModuleScreen from "./screens/ScreenDefault"
 import Header from "./components/Header/Header"
 import { Suspense, lazy } from "react"
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 const RemoteApp = lazy(() => import("remote-mfe/App"))
 
 const App = () => {

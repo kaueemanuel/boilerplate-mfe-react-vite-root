@@ -3,5 +3,6 @@
   "counter": "Counter",
   "count": "Count",
   "home": "Home",
-  "remote": "Remote"
+  "remote": "Remote",
+  "remote app {{appNumber}} count:": "Remote app {{appNumber}} count:"
 }

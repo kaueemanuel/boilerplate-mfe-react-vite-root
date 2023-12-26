@@ -3,5 +3,6 @@
   "counter": "Contador",
   "count": "Contar",
   "home": "Início",
-  "remote": "Remoto"
+  "remote": "Remoto",
+  "remote app {{appNumber}} count:": "App remoto {{appNumber}} contagem:"
 }

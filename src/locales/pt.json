@@ -1,5 +1,7 @@
 {
   "hello world": "Olá Mundo",
   "counter": "Contador",
-  "count": "Contar"
+  "count": "Contar",
+  "home": "Início",
+  "remote": "Remoto"
 }

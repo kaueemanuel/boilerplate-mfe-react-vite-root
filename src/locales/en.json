@@ -1,5 +1,7 @@
 {
   "hello world": "Hello World",
   "counter": "Counter",
-  "count": "Count"
+  "count": "Count",
+  "home": "Home",
+  "remote": "Remote"
 }
